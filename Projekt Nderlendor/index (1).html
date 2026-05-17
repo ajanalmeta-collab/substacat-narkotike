@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion mbi Substancat Narkotike</title>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+        }
+        header p {
+            margin: 0 0 25px 0;
+            color: #bdc3c7;
+            font-size: 1.1rem;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn-link {
+            display: inline-block;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        .btn-link:hover {
+            background-color: white;
+            color: #2c3e50;
+            transform: translateY(-2px);
+        }
+        .btn-quiz {
+            background-color: #2ecc71;
+            border-color: #2ecc71;
+        }
+        .btn-quiz:hover {
+            background-color: #27ae60;
+            border-color: #27ae60;
+            color: white;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .Karta {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 5px solid #e74c3c;
+        }
+        
+        /* FOTOT JANË TË FSHEHURA NË FILLIM */
+        .Karta-Imazh {
+            display: none; 
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-top: 15px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* STILI PËR TITUJT QË DO TË KLIKOHEN */
+        .Karta h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.8rem;
+            cursor: pointer;
+            display: inline-block;
+            transition: color 0.2s ease;
+        }
+        .Karta h2:hover {
+            color: #e74c3c;
+        }
+        .Karta h2::after {
+            content: " ➔ (Kliko për foton)";
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+        
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ndikimi i Substancave Psikoaktive në Organizëm</h1>
+        <p>Një vështrim shkencor mbi mekanizmat e varësisë dhe dëmtimet fizike.</p>
+        
+        <div class="nav-buttons">
+            <a href="#seksioni-duhani" class="btn-link">1. Duhani</a>
+            <a href="#seksioni-alkooli" class="btn-link">2. Alkooli</a>
+            <a href="#seksioni-drogat" class="btn-link">3. Drogat</a>
+            <a href="kuizi.html" class="btn-link btn-quiz">🎯 Luaj Kuizin</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- SEKSIONI: DUHANI -->
+        <div class="Karta" id="seksioni-duhani">
+            <h2 onclick="shfaqFoton('foto-duhani')">1. Duhani</h2>
+            <!-- Burim i ri i sigurt imazhi -->
+            <img id="foto-duhani" src="https://images.unsplash.com/photo-1556950272-9118c728e235?w=800&auto=format&fit=crop" alt="Tymi i duhanit" class="Karta-Imazh">
+            
+            <p>Duhani është një nga kërcënimet më të mëdha për shëndetin publik në botë. Ai përmban nikotinë, e cila krijon një varësi të fortë në tru në vetëm 7 deri në 10 sekonda pas thithjes, duke stimuluar çlirimin e dopaminës (hormonit të kënaqësisë).</p>
+            <p>Tymi i duhanit përmban mbi 7,000 lëndë kimike, ku të paktën 69 prej tyre janë kancerogjene të njohura. Efektet e tij shkatërruese shtrihen në të gjithë organizmin:</p>
+            <ul>
+                <li><strong>Sistemi Kardiovaskular:</strong> Nikotina ngushton enët e gjakut dhe rrit rrahjet e zemrës, ndërsa monoksidi i karbonit pakëson oksigjenin në gjak. Kjo rrit masivisht rrezikun për tension të lartë, arteriosklerozë, atak në zemër dhe iktus (goditje në tru).</li>
+                <li><strong>Sistemi i Frymëmarrjes:</strong> Përveç kancerit, duhanpirja shkatërron "ciat" (fijet e vogla mbrojtëse në rrugët e frymëmarrjes), duke çuar në bronkit kronik dhe Emfizëm (sëmundje obstruktive kronike e mushkërive - SOKM).</li>
+                <li><strong>Lëkura dhe Dhëmbët:</strong> Pakëson qarkullimin e gjakut në lëkurë, duke shkaktuar rrudha të parakohshme, zverdhje të dhëmbëve e thonjve dhe erë të keqe të gojës.</li>
+                <li><strong>Sistemi Imunitar:</strong> Duhanpirësit janë më të prirur ndaj infeksioneve të ndryshme sepse sistemi i tyre imunitar dobësohet.</li>
+            </ul>
+            <p>Mbi 80% deri në 90% e vdekjeve nga kanceri i mushkërive lidhen drejtpërdrejt me duhanpirjen aktive ose pasive, pasi toksinat dëmtojnë ADN-në e qelizave duke nxitur tumoret.</p>
+            <ul>
+                <li><strong>Fakt pozitiv:</strong> Trupi ka një aftësi të jashtëzakonshme për t'u shëruar. Vetëm 20 minuta pas lënies së duhanit, rrahjet e zemrës fillojnë të normalizohen. Brenda 1 viti, rreziku për Sëmundje të zemrës përgjysmohet, andaj pas 10-15 vitesh, rreziku për kancer të mushkërive bie pothuajse në nivelet e një personi që nuk ka pirë kurrë duhan.</li>
+            </ul>
+        </div>
+
+        <!-- SEKSIONI: ALKOOLI -->
+        <div class="Karta" id="seksioni-alkooli" style="border-left-color: #f39c12;">
+            <h2 onclick="shfaqFoton('foto-alkooli')">2. Alkooli</h2>
+            <!-- Burim i ri i sigurt imazhi -->
+            <img id="foto-alkooli" src="https://images.unsplash.com/photo-1510626176961-4b57d4fbbcbe?w=800&auto=format&fit=crop" alt="Gota me alkool" class="Karta-Imazh">
+            
+            <p>Edhe pse i ligjshëm për personat mbi 18 vjeç, konsumi i tepërt i alkoolit dëmton gjykimin dhe mund të çojë në varësi të rëndë. Alkooli klasifikohet si depresant i sistemit nervor qendror dhe ndikon direkt në këto drejtime:</p>
+            <ul>
+                <li><strong>Bllokimi i Lobit Frontal:</strong> Kjo pjesë e trurit është përgjegjëse për gjykimin, kontrollin e impulseve dhe marrjen e vendimeve. Kur alkooli prek këtë zonë, njeriu humb arsyen dhe kontrollin, duke vlerësuar gabim rreziqet.</li>
+                <li><strong>Sjellja impulsive dhe agresiviteti:</strong> Pasi ulet aftësia për të menduar racionalisht, personi priret të marrë vendime të pamenduara mirë, si p.sh. drejtimi i makinës në gjendje të dehur, përfshirja në konflikte apo ndërmarrja e rreziqeve fizike.</li>
+                <li><strong>Humbja e koordinimit:</strong> Alkooli prek edhe gjëndrën e trurit të vogël (cerebelumit), duke dëmtuar drejtpeshimin, kohën e reagimit dhe reflekset bazë.</li>
+            </ul>
+            <p>Konsumi kronik ndryshon kiminë e trurit duke rritur tolerancën (nevojën për sasi më të mëdha) dhe sjell pasoja të rënda fizike si <strong>cirroza e mëlçisë</strong>, ulçera në stomak dhe probleme kardiake.</p>
+            <ul>
+                <li><strong>Fakt social:</strong> Ligjshmëria e një substance nuk e bën atë automatikisht të padëmshme. Për shkak të qasjes së lehtë, alkooli është një nga shkaktarët kryesorë të aksidenteve rrugore, dhunës në familje dhe problemeve të shëndetit mendor në mbarë botën.</li>
+            </ul>
+        </div>
+
+        <!-- SEKSIONI: DROGAT -->
+        <div class="Karta" id="seksioni-drogat" style="border-left-color: #9b59b6;">
+            <h2 onclick="shfaqFoton('foto-droga')">3. Drogat</h2>
+            <!-- Burim i ri i sigurt imazhi -->
+            <img id="foto-droga" src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=800&auto=format&fit=crop" alt="Pilula farmaceutike" class="Karta-Imazh">
+            
+            <p>Drogat (si ajo e kanabisit, ashtu edhe ato të rëndat) ndryshojnë rrënjësisht mënyrën se si funksionon truri dhe trupi duke ndërhyrë te neurotransmetuesit natyralë. Ato shkatërrojnë shëndetin mendor dhe marrëdhëniet sociale përmes këtyre efekteve:</p>
+            <ul>
+                <li><strong>"Rrëmbimi" i trurit:</strong> Shkaktojnë një vërshim artificial të dopaminës që çon në varësi të shpejtë, duke ndryshuar fizikisht strukturën e zonave që kontrollojnë kujtesën dhe vendimmarrjen.</li>
+                <li><strong>Shëndeti Mendor:</strong> Shkaktojnë rreth vicioz të ankthit, depresionit të rëndë, paranojës apo episodeve psikotike (si skizofrenia) te personat me predispozitë gjenetike.</li>
+                <li><strong>Erozioni i Marrëdhënieve Sociale:</strong> Kur varësia merr kontrollin, gënjeshtrat dhe problemet financiare thyejnë besimin me familjen, sjellin izolim shoqëror, si dhe dështim të plotë akademik apo profesional.</li>
+                <li><strong>Pasojat fizike:</strong> Ankth, depresion, dëmtim kronik të organeve vitale (veshkat, mëlçia, zemra) dhe rrezik të lartë për mbidozë ose vdekje.</li>
+            </ul>
+        </div>
+
+        <!-- KESHILLA -->
+        <div class="Karta" style="border-left-color: #2ecc71; text-align: center;">
+            <h2>Keni nevojë për ndihmë?</h2>
+            <p>Mos ngurroni të kërkoni ndihmë nga njerëz që ta dinë vlerën.</p>
+            <button id="ButoniKeshilles">Kliko për një këshillë</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Viti shkollor: 2025-2026. Të gjitha të drejtat të rezervuara.</p>
+    </footer>
+
+    <script>
+        function shfaqFoton(idFoto) {
+            var foto = document.getElementById(idFoto);
+            if (foto.style.display === "none" || foto.style.display === "") {
+                foto.style.display = "block"; // Shfaq foton
+            } else {
+                foto.style.display = "none";  // Fsheh foton
+            }
+        }
+
+        document.getElementById("ButoniKeshilles").addEventListener("click", function() {
+            alert("Këshillë: Shëndeti është pasuria jonë më e madhe, andaj ruajeni atë!");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuiz rreth rreziqeve ndaj lëndëve narkotike - Testo Njohuritë</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        header p {
+            margin: 5px 0 0 0;
+            color: #fceae8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            transition: background 0.3s;
+        }
+        .btn-back:hover {
+            background-color: #34495e;
+        }
+        .Karta-Kuizit {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 5px solid #e74c3c;
+        }
+        .pyetje {
+            font-weight: bold;
+            margin-top: 25px;
+            color: #2c3e50;
+            border-top: 1px dashed #ddd;
+            padding-top: 15px;
+        }
+        .pyetje:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+        .opsione {
+            margin-bottom: 15px;
+        }
+        .opsione label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            border: 1px solid #e1e8ed;
+            transition: background 0.2s;
+        }
+        .opsione label:hover {
+            background-color: #f5f7f8;
+            border-color: #bdc3c7;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 20px;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        #rezultatiKuizit {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            display: block;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kuiz për lëndët narkotike</h1>
+        <p>Testo veten.</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="btn-back">⬅ Kthehu te Informacionet</a>
+
+        <div class="Karta-Kuizit">
+            <p>Përzgjidhni përgjigjen e saktë për secilën pyetje:</p>
+            
+            <form id="formularKuizi">
+                <!-- Pyetja 1 (Duhani - Efekti në gjak) -->
+                <div class="pyetje">1. Pse tymi i duhanit bën që trupi dhe muskujt tanë të marrin më pak oksigjen?</div>
+                <div class="opsione">
+                    <label><input type="radio" name="p1" value="gabim"> Sepse shkatërron direkt ujin në organizëm</label>
+                    <label><input type="radio" name="p1" value="saktë"> Sepse monoksidi i karbonit zë vendin e oksigjenit në gjak</label>
+                    <label><input type="radio" name="p1" value="gabim"> Sepse fikson sheqerin në gjak</label>
+                </div>
+
+                <!-- Pyetja 2 (Duhani - Mushkëritë) -->
+                <div class="pyetje">2. Si quhen sëmundjet e rënda të mushkërive që shkaktohen nga bllokimi dhe shkatërrimi i rrugëve të frymëmarrjes nga duhani?</div>
+                <div class="opsione">
+                    <label><input type="radio" name="p2" value="gabim"> Ulçerë dhe Diabet</label>
+                    <label><input type="radio" name="p2" value="gabim"> Anemi dhe Tension i ulët</label>
+                    <label><input type="radio" name="p2" value="saktë"> Bronkit kronik dhe Emfizëm (SOKM)</label>
+                </div>
+
+                <!-- Pyetja 3 (Alkooli - Truri) -->
+                <div class="pyetje">3. Cila pjesë e trurit preket kur një person nën efektin e alkoolit humb drejtpeshimin dhe koordinimin e lëvizjeve?</div>
+                <div class="opsione">
+                    <label><input type="radio" name="p3" value="saktë"> Truri i vogël (cerebelumi)</label>
+                    <label><input type="radio" name="p3" value="gabim"> Shtylla kurrizore</label>
+                    <label><input type="radio" name="p3" value="gabim"> Shqisa e dëgjimit</label>
+                </div>
+
+                <!-- Pyetja 4 (Alkooli - Mëlçia) -->
+                <div class="pyetje">4. Çfarë ndodh me mëlçinë e një personi nëse konsumon alkool në mënyrë të tepërt dhe afatgjatë?</div>
+                <div class="opsione">
+                    <label><input type="radio" name="p4" value="gabim"> Zmadhohet dhe bëhet më e fortë për të pastruar gjakun</label>
+                    <label><input type="radio" name="p4" value="saktë"> Dëmtohet rëndë dhe indet e saj zëvendësohen nga plagë (Cirrozë)</label>
+                    <label><input type="radio" name="p4" value="gabim"> Alkooli nuk ka asnjë efekt negativ te mëlçia</label>
+                </div>
+
+                <!-- Pyetja 5 (Drogat - Varësia) -->
+                <div class="pyetje">5. Çfarë nënkupton "Rrëmbimi i trurit" nga drogat narkotike?</div>
+                <div class="opsione">
+                    <label><input type="radio" name="p5" value="saktë"> Ndryshimin artificial të hormoneve të kënaqësisë (dopaminës), duke krijuar varësi të fortë</label>
+                    <label><input type="radio" name="p5" value="gabim"> Përmirësimin e kujtesës dhe inteligjencës së nxënësit</label>
+                    <label><input type="radio" name="p5" value="gabim"> Pastrimin e qelizave nervore nga lodhja</label>
+                </div>
+
+                <!-- Pyetje 6 (Drogat - Pasojat Sociale) -->
+                <div class="pyetje">6. Cilat janë pasojat kryesore sociale dhe mendore kur një person bie në varësi të drogave?</div>
+                <div class="opsione">
+                    <label><input type="radio" name="p6" value="gabim"> Bëhet më i shoqërueshëm dhe fiton më shumë miq</label>
+                    <label><input type="radio" name="p6" value="saktë"> Izolohet nga shoqëria, humb besimin e familjes dhe dështon në shkollë</label>
+                    <label><input type="radio" name="p6" value="gabim"> Ka më shumë përqendrim në aktivitete sportive</label>
+                </div>
+                
+                <button type="button" id="ButoniKuizit">Kontrollo Rezultatin</button>
+            </form>
+            <div id="rezultatiKuizit" style="display: none;"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Viti shkollor: 2025-2026. Të gjitha të drejtat të rezervuara.</p>
+    </footer>
+
+    <script>
+        document.getElementById("ButoniKuizit").addEventListener("click", function() {
+            let piket = 0;
+            const pyetjet = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6'];
+
+            pyetjet.forEach(function(pyetje) {
+                const ePërzgjedhura = document.querySelector(`input[name="${pyetje}"]:checked`);
+                if (ePërzgjedhura && ePërzgjedhura.value === "saktë") {
+                    piket++;
+                }
+            });
+
+            const zonaRezultatit = document.getElementById("rezultatiKuizit");
+            zonaRezultatit.style.display = "block";
+            
+            if(piket === 6) {
+                zonaRezultatit.innerHTML = "🎯 Rezultat Perfekt: " + piket + "/6 saktë! Ke njohuri të nivelit akademik!";
+                zonaRezultatit.style.color = "#27ae60"; 
+                zonaRezultatit.style.backgroundColor = "#e8f8f5"; 
+            } else if (piket >= 4) {
+                zonaRezultatit.innerHTML = "👍 Rezultat i Mirë: " + piket + "/6 saktë! Keni baza mjaft të forta shkencore.";
+                zonaRezultatit.style.color = "#2980b9";
+                zonaRezultatit.style.backgroundColor = "#ebf5fb"; 
+            } else {
+                zonaRezultatit.innerHTML = "⚠️ Rezultati: " + piket + "/6 saktë. Pyetjet ishin të vështira, lexo sërish informacionet në faqen kryesore!";
+                zonaRezultatit.style.color = "#c0392b"; 
+                zonaRezultatit.style.backgroundColor = "#fdebd0"; 
+            }
+        });
+    </script>
+
+</body>
+</html>
